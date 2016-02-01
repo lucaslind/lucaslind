@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Decorated Form</title>
+  <meta name="description" content="A project by Lucas Lind">
+  <meta name="author" content="Lucas Lind">
+
+  <link href="css/styles.css?v=1.0" rel="stylesheet">
+  <link href="js/jquery.fancybox.css" rel="stylesheet" media="screen">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/masonry.pkgd.min.js" ></script>
+  <script src="js/imagesloaded.pkgd.js"></script>
+  <script src="js/jquery.fancybox.js"></script> 
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="header">
+    <h1>
+     <div class="lucaslind">
+        <a class="lucaslindlink" href="index.html">Lucas Lind</a><br><div class="about">is a designer based in NYC and LA.</div>
+      </div>
+     <div class="portfolio">
+        <a href="http://bit.ly/1Iio2Of">Portfolio</a>
+      </div>
+     <div class="resume">
+        <a href="http://bit.ly/1KgyKov">Resumé</a>
+     </div>
+     <div class="contact">
+        <a class="contactlink" href="mailto:lwlind@gmail.com">Contact</a>
+        <div class="email">lwlind@gmail.com</div>
+      </div>
+    </h1>
+  </div>
+    <div class="nav">
+    <a class="previous" href="socialbank.html">Previous</a>
+    <a class="next" href="losthorizon.html">Next</a>
+  </div>
+ <div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  <div class="grid-item">
+    <h2>
+      <p>Decorated Form</br>2012</p>
+    </h2>
+    <h3>
+      <p>In response to the forces of water, light, and bodies, the modernist grid of the tiled pool dematerializes into a complex and dynamic network of infinite variety. Rather than treat the Manhattan block as an island, the project attempts to integrate circulation with the existing flows of the area, dissolving the form into mat while simultaneously introducing new spatial and experiential conditions into the area. During the summer, the large, semi-outdoor pool fills the void left by the lack of recreational beaches in Harlem. During the winter, the smaller exterior pool creates an urban hot springs typology. Both pools leak through perforations into the subterranean grotto, where two additional pools under the public routes of circulation form spaces that capture the dynamic interaction between moving bodies and filtered, reflected, and refracted light.</p>
+      <p>Bodies are understood as complex entities and investigated according to speed, directionality, actions, and relationships within and among a field of pedestrians. The complex interactions between bodies, patterning, light penetration, and water leakage create a new condition of occupation and a new sensorial experience. Surface grain articulation challenges the legibility of the object in the round, while the boundaries between bodies and surfaces dissolve under the influence of the potent forces of light, water, and movement. The kiss of the network onto a sculptural form is likened to the decorated shed, which Venturi, Scott Brown and Izenour described as the application of an ornamental or representational surface onto a modernist structure. The complexity and mass customization made possible by post-Fordist construction techniques are used to challenge the stability and wholeness of the fetishized sculpturalism that the very same fabrication methods have made so ubiquitous. The effects obscure a formal-sculptural reading in favor of the more varied and dynamic experience of dematerialization.</p>
+    </h3>
+    <h5>
+      <p>Professor: Philip Parker</p>
+    </h5>
+  </div>
+  <div class="grid-item">
+    <a href="images/decoratedform1.jpg" class="fancybox" rel="gallery" title="Water study drawing I">
+      <img src="images/decoratedform1.jpg"></img>
+    </a>
+    <h4>
+      <p>Light study drawing</p>
+    </h4>
+  </div>
+  <div class="grid-item">
+    <a href="images/decoratedform2.jpg" class="fancybox" rel="gallery" title="Water study drawing II">
+      <img src="images/decoratedform2.jpg"></img>
+    </a>
+    <h4>
+      <p>Water study drawing</p>
+    </h4>
+  </div>
+  <div class="grid-item">
+    <a href="images/decoratedform3.jpg" class="fancybox" rel="gallery" title="Surface and light study">
+      <img src="images/decoratedform3.jpg"></img>
+    </a>
+    <h4>
+      <p>Surface and light study</p>
+    </h4>
+  </div>
+  <div class="grid-item">
+    <a href="images/decoratedform4.jpg" class="fancybox" rel="gallery" title="Section">
+      <img src="images/decoratedform4.jpg"></img>
+    </a>
+    <h4>
+      <p>Section</p>
+    </h4>
+  </div>
+
+
+
+
+
+</div>
+
+  <script>
+  $(document).ready( function() {
+    // init Masonry
+    var $grid = $('.grid').masonry({
+      itemSelector: '.grid-item',
+      gutter: '.gutter-sizer',
+      percentPosition: true,
+      columnWidth: '.grid-sizer'
+    });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry();
+    });  
+
+    $(".fancybox").fancybox({
+
+    beforeShow : function() { this.title = (this.title ? '' + this.title + '' : '') + ' <span class="num">' + (this.index + 1) + ' / ' + this.group.length + ' </span>'; } // beforeShow
+  }); 
+
+   // fancybox
+  });
+window.onorientationchange = function() { location.reload() };
+
+  </script>
+</body>
+</html>

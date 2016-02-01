@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>: Website Design</title>
+  <meta name="description" content="A project by Lucas Lind">
+  <meta name="author" content="Lucas Lind">
+
+  <link href="css/styles.css?v=1.0" rel="stylesheet">
+  <link href="js/jquery.fancybox.css" rel="stylesheet" media="screen">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/masonry.pkgd.min.js" ></script>
+  <script src="js/imagesloaded.pkgd.js"></script>
+  <script src="js/jquery.fancybox.js"></script> 
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="header">
+    <h1>
+     <div class="lucaslind">
+        <a class="lucaslindlink" href="index.html">Lucas Lind</a><br><div class="about">is a designer based in NYC and LA.</div>
+      </div>
+     <div class="portfolio">
+        <a href="http://bit.ly/1Iio2Of">Portfolio</a>
+      </div>
+     <div class="resume">
+        <a href="http://bit.ly/1KgyKov">Resumé</a>
+     </div>
+     <div class="contact">
+        <a class="contactlink" href="mailto:lwlind@gmail.com">Contact</a>
+        <div class="email">lwlind@gmail.com</div>
+      </div>
+    </h1>
+  </div>
+    <div class="nav">
+    <a class="previous" href="saintgeorge.html">Previous</a>
+    <a class="next" href="uncertainstates.html">Next</a>
+  </div>
+ <div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  <div class="grid-item">
+    <h2>
+      <p>: Website Design<br>2013</p>
+    </h2>
+    <h3>
+      <p>: (pronounced "colon") is a workshop on architectural practices and ideas based in New York City. Founded by eight members trained as architects at the Columbia University GSAPP, : aims to carve out a space for critical reflection on chosen topics within the field. : is currently examining the spaces and modes of architectural practice that have emerged under the banner of “alternative”: spaces which ostensibly operate in opposition to the institutions that surround them.</p>
+      <p>
+      <a href="http://c-o-l-o-n.com">c-o-l-o-n.com</a>
+    </h3>
+  </div>
+  <div class="grid-item">
+    <a href="images/colon1.png" class="fancybox" rel="gallery" title=": website">
+      <img class="book" src="images/colon1.png"></img>
+    </a>
+    <h4>
+      <p>: website</p>
+    </h4>
+  </div>
+  <div class="grid-item">
+    <a href="images/colon2.png" class="fancybox" rel="gallery" title=": website">
+      <img src="images/colon2.png"></img>
+    </a>
+    <h4>
+      <p>: website</p>
+    </h4>
+  </div>
+</div>
+
+  <script>
+  $(document).ready( function() {
+    // init Masonry
+    var $grid = $('.grid').masonry({
+      itemSelector: '.grid-item',
+      gutter: '.gutter-sizer',
+      percentPosition: true,
+      columnWidth: '.grid-sizer'
+    });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry();
+    });  
+
+    $(".fancybox").fancybox({
+
+    beforeShow : function() { this.title = (this.title ? '' + this.title + '' : '') + ' <span class="num">' + (this.index + 1) + ' / ' + this.group.length + ' </span>'; } // beforeShow
+  }); 
+
+   // fancybox
+  });
+window.onorientationchange = function() { location.reload() };
+
+  </script>
+</body>
+</html>

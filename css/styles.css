@@ -1,0 +1,246 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html { overflow-y: scroll; }
+
+body {
+  font-family: Sans-Serif;
+}
+
+h1 {font-size:125%;font-weight:bold;line-height:140%;}
+h2 {font-size:125%;font-weight:bold;line-height:140%;margin-top: -20px;text-align:center;}
+h3 {font-size:118%;font-weight:normal;line-height:140%;text-align: left;}
+h4 {font-size:118%;font-weight:bold;line-height:140%;text-align:left;margin-top: -5px; margin-bottom: -5px;}
+h5 {font-size:90%;font-weight:normal;line-height:140%;text-align:left;margin-top: -5px; margin-bottom: -5px;}
+
+/*h3 {font-size:100%;font-weight:normal;line-height:80%;}*/
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+/*	border-bottom: 2px solid black;
+	margin-bottom: -5px;*/
+}
+
+sup, sub {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+}
+sub { top: 0.4em; }
+
+video 
+{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+.header {
+	width:100%;
+	margin-top:-4.5em;
+    position:fixed;
+    /*display:block;*/
+    z-index: 1000;
+      margin-left: 10.2%;
+
+}
+.header2{
+  float:left;
+  display: inline-block;
+  white-space:nowrap;
+  /*width:120px;*/
+}
+.lucaslind
+{
+    float:left;
+  display: inline-block;
+  white-space:nowrap;
+  width:122px;
+    /*text-align:left;*/
+    /*margin-left:10.2%;*/
+}
+
+.portfolio
+{
+    float:left;
+  display: inline-block;
+  white-space:nowrap;
+        /*margin-left:6.2%;*/
+  margin-left:8%;
+
+
+}
+
+.resume
+{
+    float:left;
+  display: inline-block;
+  white-space:nowrap;
+  /*margin-left:3.7%;*/
+    margin-left:4%;
+
+}
+
+.contact{
+    float:left;
+  display: inline-block;
+  white-space:nowrap;
+    /*margin-left:3.7%;*/
+        margin-left:4%;
+
+    width:20px;
+}
+
+.about {
+  display: none;
+  /*margin-left: 10.2%;*/
+}
+
+.lucaslindlink:hover ~ .about{
+  display:block;
+}
+
+.email {
+  display: none;
+  /*margin-left: 46.6%;*/
+}
+
+.contactlink:hover ~ .email {
+  display:block;
+}
+
+.indent {
+    margin-left:5%;
+}
+
+.grid {
+    margin-top: 74px;
+    margin-right: 3.5%;
+    margin-left: 4.5%;
+    /*display: inline-block;*/
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 47%;
+}
+
+.gutter-sizer {
+    width: 5.5%;
+}
+
+.grid-item{
+    margin-bottom: 2%;
+    text-align: center;
+    float: left;
+}
+
+.grid-item img {
+    max-width:100%;
+    display: block;
+    /*width:100px;*/
+}
+.grid-item img:hover {
+  cursor: pointer;
+  /*border: 3px solid black;*/
+  /*box-shadow: 5px 5px 10px #808080;*/
+}
+.book {
+
+    -webkit-box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+      /*box-shadow: 5px 5px 10px #808080;*/
+}
+/*.book {
+      box-shadow: 5px 5px 10px #808080;
+}*/
+
+.nav {
+  position: fixed;
+  margin-left: -30px;
+  /*margin-left: 1%;*/
+  top: 50%;
+  transform: translateY(-50%);
+  width: 101.5%;
+  /*text-align: center;*/
+  font-size:125%;
+  font-weight:bold;
+  line-height:100%;
+}
+.previous {
+  float: left;
+  /*margin-left: -1.25%;*/
+    margin-left: 1%;
+
+    /*margin-left: -18px;*/
+
+  /*margin-right: -5px;*/
+    -ms-transform: rotate(-90deg); 
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.next{
+  float: right;
+  margin-right: .5%;
+  /*margin-bottom: 20px;*/
+    -ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+@media only screen and (orientation : portrait) and (orientation : landscape){ 
+ .grid-sizer { width: 100%; }
+  .grid-item {width:100%;margin-bottom:5%;}
+  h1 {font-size:180%;}
+.header {
+  margin-top:-5.3em;
+}
+.grid {
+    margin-top: 83px;
+    margin-right: 6.5%;
+    margin-left: 6.5%;
+    }
+    .portfolio{
+    margin-left:15%;
+  }
+  .resume {
+    margin-left: 5%;
+  }
+  .contact {
+    margin-left: 5%;
+  }
+  .nav {
+    font-size: 180%;
+  }
+  .previous {
+    margin-left: -.5%;
+  }
+/*  .next {
+    margin-right: 1%;
+  }*/
+  /*.lucaslind {margin-left:-1%;} */
+/*  .about {
+  display: none;
+  margin-left: 8.2%;
+}
+.email {
+  display: none;
+  margin-left: 65.3%;
+}*/
+}
+/*20em*/
+

@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Scenario Planning</title>
+  <meta name="description" content="A project by Lucas Lind">
+  <meta name="author" content="Lucas Lind">
+
+  <link href="css/styles.css?v=1.0" rel="stylesheet">
+  <link href="js/jquery.fancybox.css" rel="stylesheet" media="screen">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/masonry.pkgd.min.js" ></script>
+  <script src="js/imagesloaded.pkgd.js"></script>
+  <script src="js/jquery.fancybox.js"></script> 
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="header">
+    <h1>
+     <div class="lucaslind">
+        <a class="lucaslindlink" href="index.html">Lucas Lind</a><br><div class="about">is a designer based in NYC and LA.</div>
+      </div>
+     <div class="portfolio">
+        <a href="http://bit.ly/1Iio2Of">Portfolio</a>
+      </div>
+     <div class="resume">
+        <a href="http://bit.ly/1KgyKov">Resumé</a>
+     </div>
+     <div class="contact">
+        <a class="contactlink" href="mailto:lwlind@gmail.com">Contact</a>
+        <div class="email">lwlind@gmail.com</div>
+      </div>
+    </h1>
+  </div>
+    <div class="nav">
+    <a class="previous" href="lamteitunnels.html">Previous</a>
+    <a class="next" href="harlemfields.html">Next</a>
+  </div>
+ <div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  <div class="grid-item">
+    <h2>
+      <p>Scenario Planning:<br>Uneven Growth and Tactical Urbanism in Hong Kong<br>2014</p>
+    </h2>
+    <h3>
+      <p class="indent">“One can interpret neoliberalism either as a utopian project to realize theoretical design for the reorganization of international capital OR as a political project to re-establish capital accumulation and restore the power of economic elites.” <br>      
+           <span style="float:right;">— David Harvey</h></span><br></p>
+           <p>Despite being named the “World’s Freest Economy” by Index of Economic Freedom for the twentieth consecutive year, and continuing to act as the poster child for neoliberal laissez-faire capitalism, Hong Kong can more accurately be described as a bureaucratic-cum-corporatist social welfare state. Hong Kong is in fact marked by cooperation with big business and spends a quarter of its GDP on public welfare.</p>
+           <p>Hong Kong is a city of millionaires and home to some of Asia’s richest individuals. It also finds a fifth of its population (1.3 million people) living below the poverty line. The city’s booming industry and high per-capita GDP is a misleading indicator how the majority of people live. The GINI coefficient for Hong Kong reached .537 in 2011, placing the country right below Guatemala. </p>
+           <p>Since British Colonial rule, Hong Kong has been considered an “entrepôt” economy — a term conventionally assigned to sites of trade where material goods are exempt from taxes but also applicable to this flexible economic system.  Hong Kong acts as China’s broker to the global market and vice versa. As a middle man, the city’s growth is dependent on the continued free-flow of goods, services and information both regionally and globally. To this day, Hong Kong has held the status of a highly unregulated “parallel market” with very little government intervention.    </p>
+           <p>In 2047, Hong Kong will exist as a place of extreme deregulation allowing for lucrative but otherwise regulated trading techniques and technologies. In 2047, Hong Kong will exist in a grey zone between China and global finance, identifying with neither nor being fully owned by either. Hong Kong will provide a shadow economy to fulfill the needs the heavily regulated mainstream global economy cannot. Thus despite incentives for leaving cities, finance will continue to play a major role in Hong Kong’s economy. Flows through Hong Kong will account for most of the world’s illicit flows of capital and goods.</p>
+    </h3>
+    <h5><p>Professor: Kazys Varnelis. Group project with Isabelle Kirkham-Lewitt, and Meredith Wing.</p>
+    </h5>
+  </div>
+  <div class="grid-item">
+    <a href="images/hongkong1.jpg" class="fancybox" rel="gallery" title="Legitimate and illicite flows">
+      <img src="images/hongkong1.jpg"></img>
+    </a>
+    <h4>
+      <p>Legitimate and illicite flows</p>
+    </h4>
+  </div>
+
+  <div class="grid-item">
+    <a href="images/hongkong2.jpg" class="fancybox" rel="gallery" title="Labor economy">
+      <img src="images/hongkong2.jpg"></img>
+    </a>
+    <h4>
+      <p>Labor economy</p>
+    </h4>
+  </div>
+
+  <div class="grid-item">
+    <a href="images/hongkong3.jpg" class="fancybox" rel="gallery" title="Government budget">
+      <img src="images/hongkong3.jpg"></img>
+    </a>
+    <h4>
+      <p>Government budget</p>
+    </h4>
+  </div>
+
+  <div class="grid-item">
+    <a href="images/hongkong4.jpg" class="fancybox" rel="gallery" title="Exchange and flows">
+      <img src="images/hongkong4.jpg"></img>
+    </a>
+    <h4>
+      <p>Exchange and flows</p>
+    </h4>
+  </div>
+
+  <div class="grid-item">
+    <a href="images/hongkong5.jpg" class="fancybox" rel="gallery" title="A digital heterotopia">
+      <img src="images/hongkong5.jpg"></img>
+    </a>
+    <h4>
+      <p>A digital heterotopia</p>
+    </h4>
+  </div>
+</div>
+
+
+
+  <script>
+  $(document).ready( function() {
+    // init Masonry
+    var $grid = $('.grid').masonry({
+      itemSelector: '.grid-item',
+      gutter: '.gutter-sizer',
+      percentPosition: true,
+      columnWidth: '.grid-sizer'
+    });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry();
+    });  
+
+    $(".fancybox").fancybox({
+
+    beforeShow : function() { this.title = (this.title ? '' + this.title + '' : '') + ' <span class="num">' + (this.index + 1) + ' / ' + this.group.length + ' </span>'; } // beforeShow
+  }); 
+
+   // fancybox
+  });
+window.onorientationchange = function() { location.reload() };
+
+  </script>
+</body>
+</html>

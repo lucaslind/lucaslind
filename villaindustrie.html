@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Villa Industrie de Bourg-Marie</title>
+  <meta name="description" content="A project by Lucas Lind">
+  <meta name="author" content="Lucas Lind">
+
+  <link href="css/styles.css?v=1.0" rel="stylesheet">
+  <link href="js/jquery.fancybox.css" rel="stylesheet" media="screen">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/masonry.pkgd.min.js" ></script>
+  <script src="js/imagesloaded.pkgd.js"></script>
+  <script src="js/jquery.fancybox.js"></script> 
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="header">
+    <h1>
+     <div class="lucaslind">
+        <a class="lucaslindlink" href="index.html">Lucas Lind</a><br><div class="about">is a designer based in NYC and LA.</div>
+      </div>
+     <div class="portfolio">
+        <a href="http://bit.ly/1Iio2Of">Portfolio</a>
+      </div>
+     <div class="resume">
+        <a href="http://bit.ly/1KgyKov">Resumé</a>
+     </div>
+     <div class="contact">
+        <a class="contactlink" href="mailto:lwlind@gmail.com">Contact</a>
+        <div class="email">lwlind@gmail.com</div>
+      </div>
+    </h1>
+  </div>
+    </div>
+    <div class="nav">
+    <a class="previous" href="harlemfields.html">Previous</a>
+    <a class="next" href="socialbank.html">Next</a>
+  </div>  
+ <div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  <div class="grid-item">
+    <h2>
+      <p>Villa Industrie de Bourg-Marie<br>2013</p>
+    </h2>
+    <h3>
+      <p class="indent">“The Forest of Bourg-Marie is the darkest, the deepest, the most impenetrable, the most forbidding.  The stars of spring that light up other woods seem here rarely to pierce through the cold, hard ground to the sun: the sun itself seldom penetrates the thick branches of fir and pine and hemlock.  The tints of autumn that beautify the death of the year in other places are absent from its partially-cleared fringe of pine-tasseled ground; there seems no color, no motion, no warmth anywhere.”<br>
+      <span style="float:right;">— S. Frances Harrison, 1898</h></span><br></p>
+      <p>Villa Industrie de Bourg-Marie is a statement about typology. Set in the post-industrial landscape of the Bronx, the industrial loft building references multiple histories at once – a commentary on, and perhaps a formal exaggeration of the co-working spaces of today’s corporate “avant-garde,” the Culture Shed, and early 20th century Albert Kahn manufacturing buildings.  It strives to exist in a state of “in-betweeness” – between warehouse, between lightness and heaviness, between the cores. In the same way that the building references three historic and contemporary ideas about spaces of production, Villa Industrie plays with three equally charged structural strategies: the piloti, the core, and the grid. For Corbusier, the ground floor belonged to the automobile and to nature. The Villa Industrie is a hovering box, raised above the ground by a forest of structural columns – allowing not only for easy loading and unloading of materials off of trucks, but also an extended continuity with the landscaped forest.</p>
+      <p>Historically the grid has been a declaration of Modernism. It is as much a formal device as an ideological one. The columnar grid of the Villa Industrie attempts to defy the homogenization of space to allow for a greater diversity on the interior.  By skewing the regularity of the grid, the building fights against the indeterminate nature of space in the shed typology.  No longer simply a functional and contained utility, the core in is an exploded space generator. Not one core but six distinct smaller cores – two bathrooms, an elevator, a stair, and two mechanical rooms. </p>
+      <p>On the ground floor, the individual is drawn through the forest , underneath the building canopy and into a grove of distinct and slender structural columns. These trunk-columns are intended to create an open public space, whose activities, both intimate and communal, are defined by the irregularity of their spacing. The building’s structural system reveals itself most visibility on the ground floor.  Five smaller cores, which wrap the glass enclosed lobby, touch the ground on both the east and west sides of the building. On a typical floor, the two sets of cores create smaller nooks between and behind each volume. The seemingly random placement of columns between cores creates the sensation of zoned spaces. As the only division of space, the columnar forest allows corner offices, individual cubicles, couches and pool tables to co-exist in a single space.</p>
+    </h3>
+    <h5> 
+      <p>Professors: David Wallance and Jay Hibbs. Group project with Isabelle Kirkham-Lewitt, Laura Peterson, and Athina Zafieropoulou.</p></h5>
+  </div>
+  <div class="grid-item">
+    <a href="images/villaindustrie1.jpg" class="fancybox" rel="gallery" title="Interior">
+      <img src="images/villaindustrie1.jpg"></img>
+    </a>
+    <h4>
+      <p>Interior</p>
+    </h4>
+  </div>
+    <div class="grid-item">
+    <a href="images/villaindustrie2.jpg" class="fancybox" rel="gallery" title="Plan">
+      <img src="images/villaindustrie2.jpg"></img>
+    </a>
+    <h4>
+      <p>Plan</p>
+    </h4>
+  </div>
+    <div class="grid-item">
+    <a href="images/villaindustrie3.jpg" class="fancybox" rel="gallery" title="Elevation">
+      <img src="images/villaindustrie3.jpg"></img>
+    </a>
+    <h4>
+      <p>Elevation</p>
+    </h4>
+  </div>
+    <div class="grid-item">
+    <a href="images/villaindustrie4.jpg" class="fancybox" rel="gallery" title="Curtain wall detail">
+      <img src="images/villaindustrie4.jpg"></img>
+    </a>
+    <h4>
+      <p>Curtain wall detail</p>
+    </h4>
+  </div>
+</div>
+
+  <script>
+  $(document).ready( function() {
+    // init Masonry
+    var $grid = $('.grid').masonry({
+      itemSelector: '.grid-item',
+      gutter: '.gutter-sizer',
+      percentPosition: true,
+      columnWidth: '.grid-sizer'
+    });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry();
+    });  
+
+    $(".fancybox").fancybox({
+
+    beforeShow : function() { this.title = (this.title ? '' + this.title + '' : '') + ' <span class="num">' + (this.index + 1) + ' / ' + this.group.length + ' </span>'; } // beforeShow
+  }); 
+
+   // fancybox
+  });
+window.onorientationchange = function() { location.reload() };
+
+  </script>
+</body>
+</html>

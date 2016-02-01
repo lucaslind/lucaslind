@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Terres Festa</title>
+  <meta name="description" content="A project by Lucas Lind">
+  <meta name="author" content="Lucas Lind">
+
+  <link href="css/styles.css?v=1.0" rel="stylesheet">
+  <link href="js/jquery.fancybox.css" rel="stylesheet" media="screen">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/masonry.pkgd.min.js" ></script>
+  <script src="js/imagesloaded.pkgd.js"></script>
+  <script src="js/jquery.fancybox.js"></script> 
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="header">
+    <h1>
+     <div class="lucaslind">
+        <a class="lucaslindlink" href="index.html">Lucas Lind</a><br><div class="about">is a designer based in NYC and LA.</div>
+      </div>
+     <div class="portfolio">
+        <a href="http://bit.ly/1Iio2Of">Portfolio</a>
+      </div>
+     <div class="resume">
+        <a href="http://bit.ly/1KgyKov">Resumé</a>
+     </div>
+     <div class="contact">
+        <a class="contactlink" href="mailto:lwlind@gmail.com">Contact</a>
+        <div class="email">lwlind@gmail.com</div>
+      </div>
+    </h1>
+  </div>
+      </div>
+    <div class="nav">
+    <a class="previous" href="uncertainstates.html">Previous</a>
+    <a class="next" href="lamteitunnels.html">Next</a>
+  </div>
+ <div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  <div class="grid-item">
+    <h2>
+      <p>Terres Festa:<br>Barcelona’s Post-Crash 
+Urban Imaginary<br>2014</p>
+    </h2>
+    <h3>
+      <p>Since the economic crisis in 2008, Barcelona has increasingly relied on tourism as a vital source of revenue. As a result, the culture, history, and waterfront of Barcelona are threatened by the culture of consumption, globalization, and party tourism. The conflict between the locals of Barcelona and the ever growing number of tourists visiting the city throughout the year has become spatially manifest in the urban fabric of Barcelona in the form of local party spots and monocultural, touristic theme parks such as the Port Olímpic. The uneasy equilibrium between citizens of Barcelona and foreign tourists has reached a tipping point.</p>
+      <p><em>Barcelona: A Manifesto</em> uses <em>Brussels: A Manifesto</em> by Pier Vittorio Aureli as a framework for researching the post-crash urban imaginary and party scene in Barcelona. Throughout the 20th and current centuries, large urban and often government interventions in Barcelona have propelled the urban imaginary in new directions. The manifesto proclaims Barcelona to be a city of icons while treating Port Olímpic as a precedent solution to the problem of containing monocultural party tourism.</p>
+      <p>Terres Festa proposes using radical architecture precedents as an attempt to isolate and contain Barcelona’s increasing party tourism. The massive urban interventions are re-purposed to serve in favor of a party utopia independent of the city of Barcelona but yet plugged in her urban fabric – a city within the city.  In the Terres Festa, the bourgeois shackles of work, family life, and civic responsibility are discarded. Individuals wander from one leisure environment to another in search of new sensations. Beholden to no one, they sleep, eat, party, and procreate where and when they want. By confining and decentralizing the monocultural party tourism into a party archipelago comprised of interconnected islands isolated from their surroundings, Barcelona will reclaim its waterfront and historic city center for Barcelonans.</p>
+    </h3>
+    <h5><p>Professor: Cristina Goberna. Group project with Taylor Burch, Megan Murdock, and Athina Zafieropoulou.</p></h5>
+  </div>
+  <div class="grid-item">
+    <a href="images/terresfesta1.jpg" class="fancybox" rel="gallery" title="Map of interventions throughout the city">
+      <img src="images/terresfesta1.jpg"></img>
+    </a>
+    <h4>
+      <p>Map of interventions throughout the city</p>
+    </h4>
+  </div>
+
+  <div class="grid-item">
+    <a href="images/terresfesta2.jpg" class="fancybox" rel="gallery" title="<em>Barcelona: A Manifesto</em>">
+      <img src="images/terresfesta2.jpg"></img>
+    </a>
+    <h4>
+      <p><em>Barcelona: A Manifesto</em></p>
+    </h4>
+  </div>
+
+  <div class="grid-item">
+    <a href="images/terresfesta3.jpg" class="fancybox" rel="gallery" title="<em>Barcelona: A Manifesto</em>">
+      <img src="images/terresfesta3.jpg"></img>
+    </a>
+    <h4>
+      <p><em>Barcelona: A Manifesto</em></p>
+    </h4>
+  </div>
+
+  <div class="grid-item">
+    <a href="images/terresfesta4.jpg" class="fancybox" rel="gallery" title="<em>Barcelona: A Manifesto</em>">
+      <img src="images/terresfesta4.jpg"></img>
+    </a>
+    <h4>
+      <p><em>Barcelona: A Manifesto</em></p>
+    </h4>
+  </div>
+
+  <div class="grid-item">
+    <a href="images/terresfesta5.jpg" class="fancybox" rel="gallery" title="<em>Barcelona: A Manifesto</em>">
+      <img src="images/terresfesta5.jpg"></img>
+    </a>
+    <h4>
+      <p><em>Barcelona: A Manifesto</em></p>
+    </h4>
+</div>
+    <div class="grid-item">
+    <a href="images/terresfesta6.jpg" class="fancybox" rel="gallery" title="Party Mat interior">
+      <img src="images/terresfesta6.jpg"></img>
+    </a>
+    <h4>
+      <p><em>Party Mat interior</em></p>
+    </h4>
+  </div>
+
+</div>
+  <script>
+  $(document).ready( function() {
+    // init Masonry
+    var $grid = $('.grid').masonry({
+      itemSelector: '.grid-item',
+      gutter: '.gutter-sizer',
+      percentPosition: true,
+      columnWidth: '.grid-sizer'
+    });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry();
+    });  
+
+    $(".fancybox").fancybox({
+
+    beforeShow : function() { this.title = (this.title ? '' + this.title + '' : '') + ' <span class="num">' + (this.index + 1) + ' / ' + this.group.length + ' </span>'; } // beforeShow
+  }); 
+
+   // fancybox
+  });
+window.onorientationchange = function() { location.reload() };
+
+  </script>
+</body>
+</html>
