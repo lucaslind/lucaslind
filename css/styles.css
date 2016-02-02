@@ -202,7 +202,7 @@ video
     transform: rotate(90deg);
 }
 
-@media only screen and (orientation : portrait) and (orientation : landscape){ 
+@media only screen and (max-width : 640px) { 
  .grid-sizer { width: 100%; }
   .grid-item {width:100%;margin-bottom:5%;}
   h1 {font-size:180%;}
