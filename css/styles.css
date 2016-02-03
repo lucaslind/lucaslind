@@ -201,6 +201,74 @@ video
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+/*iphone 4 and 4s*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .grid-sizer { width: 100%; }
+  .grid-item {width:100%;margin-bottom:5%;}
+  h1 {font-size:180%;}
+.header {
+  margin-top:-5.3em;
+}
+.grid {
+    margin-top: 83px;
+    margin-right: 6.5%;
+    margin-left: 6.5%;
+    }
+    .portfolio{
+    margin-left:15%;
+  }
+  .resume {
+    margin-left: 5%;
+  }
+  .contact {
+    margin-left: 5%;
+  }
+  .nav {
+    font-size: 180%;
+  }
+  .previous {
+    margin-left: -.5%;
+  }
+}
+
+/*iphone 5 and 5s*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+     .grid-sizer { width: 100%; }
+  .grid-item {width:100%;margin-bottom:5%;}
+  h1 {font-size:180%;}
+.header {
+  margin-top:-5.3em;
+}
+.grid {
+    margin-top: 83px;
+    margin-right: 6.5%;
+    margin-left: 6.5%;
+    }
+    .portfolio{
+    margin-left:15%;
+  }
+  .resume {
+    margin-left: 5%;
+  }
+  .contact {
+    margin-left: 5%;
+  }
+  .nav {
+    font-size: 180%;
+  }
+  .previous {
+    margin-left: -.5%;
+  }
+}
 /*iphone 6*/
 @media only screen and (min-device-width: 375px) 
 and (max-device-width: 667px)  
@@ -233,11 +301,37 @@ and (orientation: portrait){
     margin-left: -.5%;
   }
 }
+
 /*iphone 6plus*/
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
-
+ .grid-sizer { width: 100%; }
+  .grid-item {width:100%;margin-bottom:5%;}
+  h1 {font-size:180%;}
+.header {
+  margin-top:-5.3em;
+}
+.grid {
+    margin-top: 83px;
+    margin-right: 6.5%;
+    margin-left: 6.5%;
+    }
+    .portfolio{
+    margin-left:15%;
+  }
+  .resume {
+    margin-left: 5%;
+  }
+  .contact {
+    margin-left: 5%;
+  }
+  .nav {
+    font-size: 180%;
+  }
+  .previous {
+    margin-left: -.5%;
+  }
 }
