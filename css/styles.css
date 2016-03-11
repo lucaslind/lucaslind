@@ -49,6 +49,8 @@ video
     /*display:block;*/
     z-index: 1000;
       margin-left: 10.2%;
+      color: white;
+      mix-blend-mode: difference;
 
 }
 .header2{
