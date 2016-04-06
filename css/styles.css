@@ -219,10 +219,10 @@ video
   .grid-item {width:100%;margin-bottom:5%;}
   h1 {font-size:180%;}
 .header {
-  margin-top:-5.3em;
+  margin-top:-7em;
 }
 .grid {
-    margin-top: 83px;
+    margin-top: 110px;
     margin-right: 6.5%;
     margin-left: 6.5%;
     }
@@ -630,10 +630,10 @@ and (orientation: portrait){
   .grid-item {width:100%;margin-bottom:5%;}
   h1 {font-size:180%;}
 .header {
-  margin-top:-5.3em;
+  margin-top:-7em;
 }
 .grid {
-    margin-top: 83px;
+    margin-top: 110px;
     margin-right: 6.5%;
     margin-left: 6.5%;
     }
@@ -664,10 +664,10 @@ and (orientation: portrait){
   .grid-item {width:100%;margin-bottom:5%;}
   h1 {font-size:180%;}
 .header {
-  margin-top:-5.3em;
+  margin-top:-7em;
 }
 .grid {
-    margin-top: 83px;
+    margin-top: 110px;
     margin-right: 6.5%;
     margin-left: 6.5%;
     }
