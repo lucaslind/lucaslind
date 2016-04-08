@@ -363,6 +363,9 @@ video {
     	font-size: 200%
 
     }
+    h5 {
+    	font-size: 180%    	
+    }
     .fancybox-title {
       font: normal 210% "Helvetica Neue",Helvetica,Arial,sans-serif !important;
     }
