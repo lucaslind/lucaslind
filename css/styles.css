@@ -224,6 +224,12 @@ video {
     h2 {
         font-size: 210%;
     }    
+        h3 {
+    	font-size: 200%
+    }
+    h5 {
+    	font-size: 100%    	
+    }
     .fancybox-title {
       font: normal 210% "Helvetica Neue",Helvetica,Arial,sans-serif !important;
     }
@@ -291,6 +297,12 @@ video {
     h2 {
         font-size: 250%;
     }    
+        h3 {
+    	font-size: 200%
+    }
+    h5 {
+    	font-size: 100%    	
+    }
     .fancybox-title {
       font: normal 210% "Helvetica Neue",Helvetica,Arial,sans-serif !important;
     }
@@ -361,10 +373,9 @@ video {
     }
     h3 {
     	font-size: 200%
-
     }
     h5 {
-    	font-size: 125%    	
+    	font-size: 100%    	
     }
     .fancybox-title {
       font: normal 210% "Helvetica Neue",Helvetica,Arial,sans-serif !important;
@@ -434,6 +445,12 @@ video {
     h2 {
         font-size: 210%;
     }    
+        h3 {
+    	font-size: 200%
+    }
+    h5 {
+    	font-size: 100%    	
+    }
     .fancybox-title {
       font: normal 210% "Helvetica Neue",Helvetica,Arial,sans-serif !important;
     }
