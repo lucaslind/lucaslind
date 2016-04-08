@@ -135,12 +135,12 @@ display:block;float:right;margin-left:10px;
 }
 
 .fancybox-prev {
-	left: 10px;
+	left: 12px;
 	position: fixed;
 }
 
 .fancybox-next {
-	right: 10px;
+	right: 14px;
 	position: fixed;
 }
 
