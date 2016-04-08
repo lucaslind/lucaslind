@@ -156,10 +156,20 @@ video {
 .grid-item img {
     max-width: 100%;
     display: block;
+/*        filter: invert(1);
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -o-filter: invert(1);
+    -ms-filter: invert(1);*/
     /*width:100px;*/
 }
 .grid-item img:hover {
     cursor: pointer;
+/*    filter: invert(1);
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -o-filter: invert(1);
+    -ms-filter: invert(1);*/
 }
 .book {
     -webkit-box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
