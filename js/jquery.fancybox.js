@@ -87,7 +87,7 @@
 			playSpeed  : 3000,
 			preload    : 3,
 			modal      : false,
-			loop       : true,
+			loop       : false,
 
 			ajax  : {
 				dataType : 'html',
