@@ -129,6 +129,12 @@ video {
 .email {
     display: none;
 }
+.underline {
+    text-decoration: underline;
+}
+.underline:hover {
+    text-decoration: none;
+}
 .contactlink:hover ~ .email {
     display: block;
 }
