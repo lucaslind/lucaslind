@@ -99,11 +99,12 @@ video {
     float: left;
     display: inline-block;
     white-space: nowrap;
-    width: 122px;
+    /*width: 122px;*/
 }
 .portfolio {
     float: left;
-    display: inline-block;
+    /*display: inline-block;*/
+    display: none;
     white-space: nowrap;    
     margin-left: 9%;
 }
@@ -122,6 +123,7 @@ video {
 }
 .about {
     display: none;
+    position: fixed;
 }
 .lucaslindlink:hover ~ .about {
     display: block;
