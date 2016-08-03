@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>to expose, to show, to demonstrate, to inform, to offer</title>
+  <meta name="description" content="A project by Lucas Lind">
+  <meta name="author" content="Lucas Lind">
+
+  <link href="../assets/css/styles.css?v=1.0" rel="stylesheet">
+  <link href="../assets/js/jquery.fancybox.css" rel="stylesheet" media="screen">
+  <script src="../assets/js/jquery-1.11.3.min.js"></script>
+  <script src="../assets/js/masonry.pkgd.min.js" ></script>
+  <script src="../assets/js/imagesloaded.pkgd.js"></script>
+  <script src="../assets/js/jquery.fancybox.js"></script> 
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="header">
+    <h1>
+     <div class="lucaslind">
+        <a class="lucaslindlink" href="http://lucaslind.com">Lucas Lind</a><br><div class="about">is a designer based in NYC.</div>
+      </div>
+     <div class="portfolio">
+        <a href="http://bit.ly/1NDOlxy" target="_blank">Portfolio (pdf)</a>
+      </div>
+     <div class="resume">
+        <a href="http://soundcloud.com/leoemerald" target="_blank">Soundcloud</a>
+     </div>
+     <div class="contact">
+        <a class="contactlink" href="mailto:lwlind@gmail.com">Contact</a>
+        <div class="email">lwlind@gmail.com</div>
+      </div>
+    </h1>
+  </div>
+
+      <div class="nav">
+    <a class="previous" href="../consortia">Previous</a>
+    <a class="next" href="../boundless-reality">Next</a>
+  </div>
+
+ <div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  <div class="grid-item">
+    <h2>
+      <p>to expose, to show, to demonstrate, to inform, to offer: Artistic Practices around 1990</p>
+    </h2>
+    <h3>
+      <p>An exhibition at the mumok Museum in Vienna surverying critical art practice in the late ’80s and early ’90s and featuring works by more than fifty artists and artists’ groups. The exhibition graphics embody a site-specific approach to placing text and image in space, taking advantage of the unusual architectural restraints and opportunities afforded by the mumok building.</p>
+      <p>
+        <a href="https://www.mumok.at/en/events/expose-show-demonstrate-inform-offer" target="_blank" class="underline">More information</a> 
+      </p>
+    </h3>
+        <h5>
+      <p>Exhibition and graphic design for <a class="underline" href="http://projectprojects.com">Project Projects</a>. Project team: Hilde Gahlen, Prem Krishnamurthy, and Ken Saylor.</p>
+    </h5>
+  </div>
+  <div class="grid-item">
+    <a href="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-1.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-1.jpg"></img>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-2.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-2.jpg"></img>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-3.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-3.jpg"></img>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-4.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-4.jpg"></img>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-5.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-5.jpg"></img>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-6.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-6.jpg"></img>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-7.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-7.jpg"></img>
+    </a>
+  </div>
+    <div class="grid-item">
+    <a href="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-8.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-8.jpg"></img>
+    </a>
+  </div>
+    <div class="grid-item">
+    <a href="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-9.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/to-expose-to-show-to-demonstrate-to-inform-to-offer-9.jpg"></img>
+    </a>
+  </div>
+
+</div>
+
+  <script>
+  $(document).ready( function() {
+    // init Masonry
+    var $grid = $('.grid').masonry({
+      itemSelector: '.grid-item',
+      gutter: '.gutter-sizer',
+      percentPosition: true,
+      columnWidth: '.grid-sizer'
+    });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry();
+    });  
+
+    $(".fancybox").fancybox({
+
+    beforeShow : function() { this.title = (this.title ? '' + this.title + '' : '') + ' <span class="num">' + (this.index + 1) + ' / ' + this.group.length + ' </span>'; } // beforeShow
+  }); 
+
+   // fancybox
+  });
+window.onorientationchange = function() { location.reload() };
+
+  </script>
+</body>
+</html>
