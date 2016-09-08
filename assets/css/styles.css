@@ -86,7 +86,8 @@ video {
     margin-top: -83px;
     position: fixed;
     z-index: 1000;
-    margin-left: 10.2%;
+    /*margin-left: 10.2%;*/
+    margin-left: 4.3%;
     color: black;
     /*mix-blend-mode: difference;*/
 }
@@ -110,7 +111,8 @@ video {
 }
 .resume {
     float: left;
-    display: inline-block;
+    /*display: inline-block;*/
+    display: none;
     white-space: nowrap;    
     margin-left: 5%;
 }
