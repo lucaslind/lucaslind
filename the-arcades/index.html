@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The Arcades: Contemporary Art and Walter Benjamin</title>
+  <meta name="description" content="A project by Lucas Lind">
+  <meta name="author" content="Lucas Lind">
+
+  <link href="../assets/css/styles.css?v=1.0" rel="stylesheet">
+  <link href="../assets/js/jquery.fancybox.css" rel="stylesheet" media="screen">
+  <script src="../assets/js/jquery-1.11.3.min.js"></script>
+  <script src="../assets/js/masonry.pkgd.min.js" ></script>
+  <script src="../assets/js/imagesloaded.pkgd.js"></script>
+  <script src="../assets/js/jquery.fancybox.js"></script> 
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="header">
+    <h1>
+     <div class="lucaslind">
+        <a class="lucaslindlink" href="http://lucaslind.com">Lucas Lind</a><br><div class="about">is a designer based in NYC.</div>
+      </div>
+     <div class="portfolio">
+        <a href="http://bit.ly/1NDOlxy" target="_blank">Portfolio (pdf)</a>
+      </div>
+     <div class="resume">
+        <a href="http://soundcloud.com/leoemerald" target="_blank">Soundcloud</a>
+     </div>
+     <div class="contact">
+        <a class="contactlink" href="mailto:lwlind@gmail.com">Contact</a>
+        <div class="email">lwlind@gmail.com</div>
+      </div>
+    </h1>
+  </div>
+  <div class="nav">
+    <!-- <a class="previous" href="../folder-name">Previous</a> -->
+    <a class="next" href="../creative-operational-solutions">Next</a>
+  </div>
+ <div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  <div class="grid-item">
+    <h2>
+      <p>The Arcades: Contemporary Art and Walter Benjamin<br>2017</p>
+    </h2>
+    <h3>
+      <p>An exhibition that explores <i>The Arcades Project</i> through works of contemporary art representing the subjects of each of the book’s thirty-six chapters. The exhibition combines archival material from the Benjamin archive in Berlin, architectural models, and artwork to evoke the elaborate structure of Benjamin’s text. Transposing Benjamin’s arcades to the galleries of the Jewish Museum, the exhibition invites the visitor to take on the role of the flâneur.</p>
+<p>
+      Participating Artists:
+Erica Baum,
+Walead Beshty,
+Milena Bonilla,
+Andrea Bowers,
+Nicholas Buffon,
+Chris Burden,
+Haris Epaminonda and Daniel Gustav Cramer,
+Simon Evans,
+Walker Evans,
+Claire Fontaine,
+Lee Friedlander,
+Rodney Graham,
+Andreas Gursky,
+Raymond Hains,
+Pierre Huyghe,
+Voluspa Jarpa,
+Jesper Just,
+Sanya Kantarovsky,
+Mike Kelley,
+Tim Lee,
+Jorge Macchi,
+Adam Pendleton,
+Martín Ramírez,
+Bill Rauhauser,
+Mary Reid Kelley,
+Ry Rocklen,
+Markus Schinwald,
+Collier Schorr,
+Cindy Sherman,
+Taryn Simon,
+Joel Sternfeld,
+Mungo Thomson,
+Timm Ulrichs,
+Guido van der Werve,
+James Welling,
+and Cerith Wyn Evans</p>
+<a class="underline" target="_blank" href="http://infoandupdates.com/the-arcades-contemporary-art-and-walter-benjamin/">Exhibition catalogue</a><br>
+      <a class="underline" target="_blank" href="http://thejewishmuseum.org/exhibitions/the-arcades-contemporary-art-and-walter-benjamin">More information</a>
+
+
+
+    </h3>
+        <h5><p>Exhibition design for <a class="underline" target="_blank" href="http://projectprojects.com">Project Projects</a>. Project team: Max Harvey, Prem Krishnamurthy, and Eric Price. Curated by Jens Hoffmann.</p>
+    </h5>
+  </div>
+  <div class="grid-item">
+    <a href="images/the-arcades-1.jpg" class="fancybox" rel="gallery" title="Intro Hallway &quot;Arcade&quot;">
+      <img src="images/the-arcades-1.jpg"></img>
+    </a>
+<!--     <h4>
+      <p>caption</p>
+    </h4> -->
+  </div>
+    <div class="grid-item">
+        <a href="images/the-arcades-2.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/the-arcades-2.jpg"></img>
+    </a>
+<!--     <h4>
+      <p>caption</p>
+    </h4> -->
+  </div>
+    <div class="grid-item">
+            <a href="images/the-arcades-3.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/the-arcades-3.jpg"></img>
+    </a>
+<!--     <h4>
+      <p>caption</p>
+    </h4> -->
+  </div>
+    <div class="grid-item">
+            <a href="images/the-arcades-4.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/the-arcades-4.jpg"></img>
+    </a>
+<!--     <h4>
+      <p>caption</p>
+    </h4> -->
+  </div>
+    <div class="grid-item">
+        <a href="images/the-arcades-5.jpg" class="fancybox" rel="gallery" title="Exhibition view">
+      <img src="images/the-arcades-5.jpg"></img>
+    </a>
+<!--     <h4>
+      <p>caption</p>
+    </h4> -->
+  </div>
+</div>
+
+  <script>
+  $(document).ready( function() {
+    // init Masonry
+    var $grid = $('.grid').masonry({
+      itemSelector: '.grid-item',
+      gutter: '.gutter-sizer',
+      percentPosition: true,
+      columnWidth: '.grid-sizer'
+    });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry();
+    });  
+
+    $(".fancybox").fancybox({
+
+    beforeShow : function() { this.title = (this.title ? '' + this.title + '' : '') + ' <span class="num">' + (this.index + 1) + ' / ' + this.group.length + ' </span>'; } // beforeShow
+  }); 
+
+   // fancybox
+  });
+window.onorientationchange = function() { location.reload() };
+
+  </script>
+</body>
+</html>
