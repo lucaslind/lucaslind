@@ -104,8 +104,8 @@ video {
 }
 .portfolio {
     float: left;
-    /*display: inline-block;*/
-    display: none;
+    display: inline-block;
+    /*display: none;*/
     white-space: nowrap;    
     margin-left: 9%;
 }
