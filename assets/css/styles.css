@@ -107,7 +107,7 @@ video {
     display: inline-block;
     /*display: none;*/
     white-space: nowrap;    
-    margin-left: 9%;
+    margin-left: 5%;
 }
 .resume {
     float: left;
@@ -337,7 +337,7 @@ text-decoration: underline;
         margin-left: 7%;
     }
     .portfolio {
-        margin-left: 11%;
+        margin-left: 5%;
     }
     .resume {
         margin-left: 5%;
@@ -411,7 +411,7 @@ text-decoration: underline;
         margin-left: 7%;
     }
     .portfolio {
-        margin-left: 11%;
+        margin-left: 5%;
     }
     .resume {
         margin-left: 5%;
@@ -485,7 +485,7 @@ text-decoration: underline;
         margin-left: 7%;
     }
     .portfolio {
-        margin-left: 11%;
+        margin-left: 5%;
     }
     .resume {
         margin-left: 5%;
