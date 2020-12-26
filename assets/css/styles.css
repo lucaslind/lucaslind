@@ -164,7 +164,7 @@ video {
 }
 .grid-item {
     margin-bottom: 65px;
-    text-align: center;
+    text-align: left;
     float: left;
 }
 .grid-item img {
