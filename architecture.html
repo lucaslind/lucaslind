@@ -1,0 +1,223 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Lucas Lind, Lucas, Lind, photography, photographer, architecture, film">
+    <meta name="description" content="Lucas Lind is a photographer based in NYC.">
+    <title>Lucas Lind</title>
+    <meta name="author" content="Lucas Lind">
+    <link href="assets/css/styles.css?v=1.0" rel="stylesheet">
+    <link href="assets/fullpage.min.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/fullpage.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+         <div class="home">
+                <a href="http://lucaslind.com">Lucas Lind</a>
+          </div>
+          <div class="portfolio dropdown">
+              <button class="dropbtn">Portfolio</button>
+                  <div class="dropdown-content">
+                    <a href="http://lucaslind.com">Life</a>
+                    <a class="arch-link" href="http://lucaslind.com/architecture">Architecture</a>
+              </div>
+            </div>
+         <div class="prints">
+                <a href="http://lucaslind.darkroom.tech" target="_blank">Prints</a>
+          </div>
+         <div class="info">
+            <a href="http://lucaslind.com/about">Info</a>
+          </div>
+    </div>
+
+<div  class="arrow">
+    <img id="moveDown" src="assets/img/arrow.png">
+</div>
+
+<div id="fullpage">
+    <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-1.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-2.jpg">
+      </div>
+    </div>
+ <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-3.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-4.jpg">
+      </div>
+    </div>
+ <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-5.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-6.jpg">
+      </div>
+    </div>
+ <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-7.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-8.jpg">
+      </div>
+    </div>
+ <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-9.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-10.jpg">
+      </div>
+    </div>
+ <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-11.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-12.jpg">
+      </div>
+    </div>
+ <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-13.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-14.jpg">
+      </div>
+    </div>
+ <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-15.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-16.jpg">
+      </div>
+    </div>
+ <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-17.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-18.jpg">
+      </div>
+    </div>
+ <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-19.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-20.jpg">
+      </div>
+    </div>
+ <div class="row section">
+      <div class="column">
+            <img class="photo" src="images/lucaslind-arch-21.jpg">
+      </div>
+
+      <div class="column">
+          <img class="photo" src="images/lucaslind-arch-22.jpg">
+      </div>
+    </div>
+
+</div>
+
+
+<!-- <script>
+    $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > -10 && y < 100) {
+        $('#section1').show();
+    } else {
+        $('#section1').hide();
+    }
+    if (y > 100 && y < 200) {
+        $('#section2').show();
+    } else {
+        $('#section2').hide();
+    }
+    if (y > 200 && y < 300) {
+        $('#section3').show();
+    } else {
+        $('#section3').hide();
+    }
+        if (y > 300 && y < 400) {
+        $('#section4').show();
+    } else {
+        $('#section4').hide();
+    }
+
+
+});
+</script> -->
+
+<script>
+
+
+
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+        //options here
+        licenseKey: '35772F3B-03D64DA8-9EC63033-E809ED76',
+        scrollingSpeed: 0,
+        // autoScrolling: false,
+        // fitToSection: false,
+        fitToSectionDelay: 0,
+        touchSensitivity: 5,
+        scrollDelay: 10,
+        css3: false,
+        loopBottom: true,
+        loopTop: true,
+
+// fullpage_api.setAllowScrolling(false);
+
+        // methods
+            // onLeave: function(index, nextIndex, direction){
+            //     var idx = Math.abs(index - nextIndex)*.1;
+            //     $.fn.fullpage.setScrollingSpeed(idx*1000);
+            //     }
+
+
+
+    // onLeave: function(origin, destination, direction){
+
+    //     if(origin.index == 0 && direction =='down'){
+    //         fullpage_api.silentMoveTo(4);
+    //     }
+    // }
+});
+
+});
+
+
+
+$(document).on('click', '#moveDown', function(){
+  $.fn.fullpage.moveSectionDown();
+});
+
+
+
+</script>
+
+</body>
+
+</html>
