@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html {
-    overflow-y: scroll;
+    overflow-y: scroll; 
 }
 html,
 html a {
@@ -207,14 +207,14 @@ button:hover {
     font-size: 3em;
   }
   .arrow img {
-height: 7em;
-}
-.photo {
-  transform: translate(-50%, -75%);
-    -ms-transform: translate(-50%,-75%); /* IE 9 */
-  -webkit-transform: translate(-50%,-75%); /* Chrome, Safari, Opera */
+    height: 7em;
+    }
+    .photo {
+      transform: translate(-50%, -75%);
+        -ms-transform: translate(-50%,-75%); /* IE 9 */
+      -webkit-transform: translate(-50%,-75%); /* Chrome, Safari, Opera */
 
-}
+    }
 
 
 }
