@@ -286,9 +286,20 @@
         loopBottom: true,
         loopTop: true,
         verticalCentered:true,
-        responsiveHeight: 900,
+        responsiveHeight: 700,
 
         // methods
+        onLeave: function(origin, destination, direction){
+        var leavingSection = this;
+
+        //after leaving section 2
+        if(origin.index == 0 && direction =='down'){
+            $( ".arrow" ).fadeOut( "slow", function() {
+
+              });
+        }
+    }
+
 
 
 });
@@ -305,8 +316,6 @@
 $(document).on('click', '#moveDown', function(){
   $.fn.fullpage.moveSectionDown();
 });
-
-
 
 
 

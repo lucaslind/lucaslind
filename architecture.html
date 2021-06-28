@@ -169,6 +169,17 @@
             //     $.fn.fullpage.setScrollingSpeed(idx*1000);
             //     }
 
+                    onLeave: function(origin, destination, direction){
+        var leavingSection = this;
+
+        //after leaving section 2
+        if(origin.index == 0 && direction =='down'){
+            $( ".arrow" ).fadeOut( "slow", function() {
+
+              });
+        }
+    }
+
 
 });
 
