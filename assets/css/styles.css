@@ -60,6 +60,15 @@ a:hover {
     margin-left: 5%;
 }
 
+.active-button {
+    text-decoration: underline !important;
+}
+.active-button:hover {
+    text-decoration: none !important;
+}
+.active-button a:hover {
+    text-decoration: none !important;
+}
 button {
   align-items: normal;
   color: white;
