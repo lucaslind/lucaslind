@@ -5,6 +5,7 @@
 }
 html {
     overflow-y: scroll; 
+    height: 100%;
 }
 html,
 html a {
@@ -15,6 +16,7 @@ body {
     font-family: Sans-Serif;
     margin: 0;
     background-color: black;
+    height: 100%;
 }
 
 a {
@@ -209,7 +211,11 @@ button:hover {
   .arrow img {
     height: 7em;
     }
-
-
+    .column {
+        height: 100%;
+    }
+    .row {
+        height: 100%;
+    }
 
 }
