@@ -292,13 +292,27 @@
         onLeave: function(origin, destination, direction){
         var leavingSection = this;
 
-        //after leaving section 2
         if(origin.index == 0 && direction =='down'){
             $( ".arrow" ).fadeOut( "slow", function() {
-
               });
+            }
         }
-    }
+
+
+
+    // afterLoad: function(origin, destination, direction){
+    //     var loadedSection = this;
+
+    //     //using index
+    //     if(direction == down){
+    //         $( ".fp-section.active" ).css( "opacity", "1");
+    //     }
+
+    //     // //using anchorLink
+    //     if(origin.anchor == 'secondSlide'){
+    //         alert("Section 2 ended loading");
+    //     }
+    // }
 
 
 
