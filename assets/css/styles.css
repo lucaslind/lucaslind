@@ -209,12 +209,7 @@ button:hover {
   .arrow img {
     height: 7em;
     }
-    .photo {
-      transform: translate(-50%, -75%);
-        -ms-transform: translate(-50%,-75%); /* IE 9 */
-      -webkit-transform: translate(-50%,-75%); /* Chrome, Safari, Opera */
 
-    }
 
 
 }
