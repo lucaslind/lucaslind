@@ -5,7 +5,7 @@
 }
 html {
     overflow-y: scroll; 
-    height: 100%;
+    height: 100vh;
 }
 html,
 html a {
@@ -16,7 +16,7 @@ body {
     font-family: Sans-Serif;
     margin: 0;
     background-color: black;
-    height: 100%;
+    height: 100vh;
 }
 
 a {
